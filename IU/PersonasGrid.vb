@@ -32,14 +32,14 @@
     End Sub
     Private Sub llenarform()
         'funcion que llena la grilla con los datos de base de datos
-        PersonasForm.TextBox1.Text = DataGridView1.CurrentRow.Cells(1).Value.ToString
-        PersonasForm.TextBox2.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
-        PersonasForm.TextBox3.Text = DataGridView1.CurrentRow.Cells(5).Value.ToString
-        PersonasForm.TextBox4.Text = DataGridView1.CurrentRow.Cells(2).Value.ToString
-        PersonasForm.TextBox5.Text = DataGridView1.CurrentRow.Cells(0).Value.ToString
+        PersonasForm.TextBox1.Text = DataGridView1.CurrentRow.Cells("Nombre").Value.ToString
+        PersonasForm.TextBox2.Text = DataGridView1.CurrentRow.Cells("Direccion").Value.ToString
+        PersonasForm.TextBox3.Text = DataGridView1.CurrentRow.Cells("CodPostal").Value.ToString
+        PersonasForm.TextBox4.Text = DataGridView1.CurrentRow.Cells("NumDocumento").Value.ToString
+        PersonasForm.TextBox5.Text = DataGridView1.CurrentRow.Cells("Id").Value.ToString
 
-        PersonasForm.ComboBox2.Text = DataGridView1.CurrentRow.Cells(6).Value.ToString
-        PersonasForm.ComboBox1.Text = DataGridView1.CurrentRow.Cells(3).Value.ToString
+        PersonasForm.ComboBox2.Text = DataGridView1.CurrentRow.Cells("nombreDocumentos").Value.ToString
+        PersonasForm.ComboBox1.Text = DataGridView1.CurrentRow.Cells("nombreProvincia").Value.ToString
 
     End Sub
     Private Sub personasGrid_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -48,4 +48,5 @@
     End Sub
 
    
+  
 End Class
