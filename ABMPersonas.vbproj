@@ -134,9 +134,6 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\DataSources\PersonasCollection.datasource" />
-    <None Include="My Project\DataSources\PersonasCollection1.datasource" />
-    <None Include="My Project\DataSources\PersonasCollection2.datasource" />
-    <None Include="My Project\DataSources\PersonasCollection3.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>

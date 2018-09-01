@@ -38,8 +38,8 @@
         PersonasForm.TextBox4.Text = DataGridView1.CurrentRow.Cells("NumDocumento").Value.ToString
         PersonasForm.TextBox5.Text = DataGridView1.CurrentRow.Cells("Id").Value.ToString
 
-        PersonasForm.ComboBox2.Text = DataGridView1.CurrentRow.Cells("nombreDocumentos").Value.ToString
-        PersonasForm.ComboBox1.Text = DataGridView1.CurrentRow.Cells("nombreProvincia").Value.ToString
+        'PersonasForm.ComboBox2.Text = DataGridView1.CurrentRow.Cells("nombreDocumento").Value.ToString
+        'PersonasForm.ComboBox1.Text = DataGridView1.CurrentRow.Cells("IdProvincia").Value.ToString
 
     End Sub
     Private Sub personasGrid_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

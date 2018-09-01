@@ -29,6 +29,9 @@
         ComboBox2.DataSource = MiPersona.documentos
         ComboBox1.SelectedIndex = 0
         ComboBox2.SelectedIndex = 0
+        TextBox5.Enabled = True
+        TextBox5.ReadOnly = False
+
     End Sub
 
 
@@ -89,9 +92,10 @@
             Case "nuevo"
                 lst.InsertarPersona(MiPersona)
             Case "elimina"
-                lst.RemoveAt(indice_)
+                'lst.RemoveAt(indice_)
+                lst.EliminarPersona(MiPersona)
             Case "modifica"
-                lst.Item(indice_) = MiPersona
+                '  lst.Item(indice_) = MiPersona
                 lst.ActualizarPersona(MiPersona)
         End Select
         'en la operacion elimina o modifica toma al objeto por el id

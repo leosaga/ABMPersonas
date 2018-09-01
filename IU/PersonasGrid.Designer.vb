@@ -36,8 +36,8 @@ Partial Class PersonasGrid
         Me.PersonasCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Id = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
-        Me.NumDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.nombreDocumentos = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.NumDocumento = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.CodPostal = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.nombreProvincia = New System.Windows.Forms.DataGridViewTextBoxColumn
@@ -56,7 +56,7 @@ Partial Class PersonasGrid
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(783, 87)
+        Me.Panel1.Size = New System.Drawing.Size(728, 87)
         Me.Panel1.TabIndex = 0
         '
         'PictureBox1
@@ -86,7 +86,7 @@ Partial Class PersonasGrid
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton4})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 87)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(783, 55)
+        Me.ToolStrip1.Size = New System.Drawing.Size(728, 55)
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -131,7 +131,7 @@ Partial Class PersonasGrid
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nombre, Me.NumDocumento, Me.nombreDocumentos, Me.Direccion, Me.CodPostal, Me.nombreProvincia})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id, Me.Nombre, Me.nombreDocumentos, Me.NumDocumento, Me.Direccion, Me.CodPostal, Me.nombreProvincia})
         Me.DataGridView1.DataSource = Me.PersonasCollectionBindingSource
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 142)
@@ -140,7 +140,7 @@ Partial Class PersonasGrid
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(783, 312)
+        Me.DataGridView1.Size = New System.Drawing.Size(728, 312)
         Me.DataGridView1.TabIndex = 3
         '
         'PersonasCollectionBindingSource
@@ -161,19 +161,19 @@ Partial Class PersonasGrid
         Me.Nombre.Name = "Nombre"
         Me.Nombre.ReadOnly = True
         '
-        'NumDocumento
-        '
-        Me.NumDocumento.DataPropertyName = "NumDocumento"
-        Me.NumDocumento.HeaderText = "NumDocumento"
-        Me.NumDocumento.Name = "NumDocumento"
-        Me.NumDocumento.ReadOnly = True
-        '
         'nombreDocumentos
         '
         Me.nombreDocumentos.DataPropertyName = "nombreDocumentos"
         Me.nombreDocumentos.HeaderText = "nombreDocumentos"
         Me.nombreDocumentos.Name = "nombreDocumentos"
         Me.nombreDocumentos.ReadOnly = True
+        '
+        'NumDocumento
+        '
+        Me.NumDocumento.DataPropertyName = "NumDocumento"
+        Me.NumDocumento.HeaderText = "NumDocumento"
+        Me.NumDocumento.Name = "NumDocumento"
+        Me.NumDocumento.ReadOnly = True
         '
         'Direccion
         '
@@ -201,7 +201,7 @@ Partial Class PersonasGrid
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.ClientSize = New System.Drawing.Size(783, 454)
+        Me.ClientSize = New System.Drawing.Size(728, 454)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.Panel1)
@@ -239,8 +239,8 @@ Partial Class PersonasGrid
     Friend WithEvents PersonasCollectionBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Id As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NumDocumento As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombreDocumentos As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NumDocumento As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Direccion As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents CodPostal As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents nombreProvincia As System.Windows.Forms.DataGridViewTextBoxColumn
